@@ -1,7 +1,11 @@
 Web Practice: Instagram Clone
 ====
+<div style="list-style=">
 
-author: youngrong.oh
+* *Author: youngrong.oh*
+* *Date: June 8, 2020*
+
+</div>
 
 ----
 ## 1. Wire Frame

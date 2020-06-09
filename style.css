@@ -1,0 +1,46 @@
+/* Global */
+:root {
+    /* Color */
+    --color-white: #FFF;
+    --color-black: #231F20;
+    --color-grey-light: #DBDBDB;
+    --color-grey-dark: #FAFAFA;
+    --color-red: #ED4956;
+    --color-blue: #0095F6;
+    --color-pink: #C32E92;
+    --color-orange: #F99B4A;
+
+    /* Font Size */
+    --font-large: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+
+    /* Font Weight */
+    --weight-bold: 600;
+    --weight-reqular: 400;
+    --weight-thin: 300;
+}
+
+/* CSS Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+}
