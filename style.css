@@ -28,6 +28,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--color-grey-light);
+    font-family: 'Open Sans', sans-serif;
 }
 ul {
     margin: 0;
@@ -39,6 +40,7 @@ li {
 a{
     text-decoration: none;
     color: inherit;
+    outline: none;
 }
 h2{
     display: inline;
@@ -77,4 +79,71 @@ button {
     height: 22px;
     border: 0.5px solid var(--color-grey-dark);
     border-radius: 50%;
+}
+
+/* Story Line */
+#storyline {
+    background-color: var(--color-white);
+    border: 0.5px solid var(--color-grey-dark);
+    position: relative;
+    padding: 22px 0 14px 0;
+    margin-bottom: 20px;
+}
+#storyline .storys {
+    display: flex;
+}
+#storyline .story {
+    margin-left: 24px;
+    text-align: center;
+}
+#storyline .story .profile {
+    position: relative;
+    padding-bottom: 8px;
+}
+#storyline .story .profile img {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+#storyline .story .profile:before {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-image: url(imgs/sprite-1.png);
+    background-repeat: no-repeat;
+    background-position: -253px -60px;
+    background-size: 382px;
+    border-radius: 50%;
+}
+#storyline .story .username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 56px;
+    font-size: var(--font-small);
+}
+#storyline .arrowBtn {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(imgs/sprite-2.png);
+    background-repeat: no-repeat;
+    background-size: 430px;
+    border-radius: 50%;
+}
+#storyline .arrowBtn.left {
+    background-position: -174px -213px;
+    left: 8px;
+    display: none;
+}
+#storyline .arrowBtn.right {
+    background-position: -220px -213px;
+    right: 8px;
 }
