@@ -3,8 +3,8 @@
     /* Color */
     --color-white: #FFF;
     --color-black: #231F20;
-    --color-grey-light: #DBDBDB;
-    --color-grey-dark: #FAFAFA;
+    --color-grey-light: #FAFAFA;
+    --color-grey-dark: #DBDBDB;
     --color-red: #ED4956;
     --color-blue: #0095F6;
     --color-pink: #C32E92;
@@ -27,6 +27,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--color-grey-light);
 }
 ul {
     margin: 0;
@@ -43,4 +44,37 @@ h2{
     display: inline;
     font-size: inherit;
     font-weight: inherit;
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Navbar */
+#navbar {
+    padding: 20px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    border-bottom: 0.5px solid var(--color-grey-dark);
+    margin-bottom: 2px;
+}
+#navbar .logo img {
+    width: 103px;
+}
+.navbar__icons {
+    display: flex;
+}
+.navbar__icons .icon{
+    margin-left: 20px;
+}
+.navbar__icons .myFeed img{
+    width: 22px;
+    height: 22px;
+    border: 0.5px solid var(--color-grey-dark);
+    border-radius: 50%;
 }
