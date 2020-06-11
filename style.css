@@ -3,6 +3,7 @@
     /* Color */
     --color-white: #FFF;
     --color-black: #231F20;
+    --color-black-light: #262626;
     --color-grey-light: #FAFAFA;
     --color-grey-dark: #DBDBDB;
     --color-red: #ED4956;
@@ -47,6 +48,9 @@ h2{
     font-size: inherit;
     font-weight: inherit;
 }
+p{
+    margin: 0;
+}
 button {
     background-color: transparent;
     border: none;
@@ -68,13 +72,13 @@ button {
 #navbar .logo img {
     width: 103px;
 }
-.navbar__icons {
+.icons {
     display: flex;
 }
-.navbar__icons .icon{
+#navbar .icons .icon{
     margin-left: 20px;
 }
-.navbar__icons .myFeed img{
+#navbar .icons .myFeed img{
     width: 22px;
     height: 22px;
     border: 0.5px solid var(--color-grey-dark);
@@ -88,6 +92,10 @@ button {
     position: relative;
     padding: 22px 0 14px 0;
     margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 2px;
+    color: var(--color-black-light);
+
 }
 #storyline .storys {
     display: flex;
@@ -127,7 +135,7 @@ button {
     max-width: 56px;
     font-size: var(--font-small);
 }
-#storyline .arrowBtn {
+.arrowBtn {
     width: 36px;
     height: 36px;
     position: absolute;
@@ -138,12 +146,144 @@ button {
     background-size: 430px;
     border-radius: 50%;
 }
-#storyline .arrowBtn.left {
+.arrowBtn.left {
     background-position: -174px -213px;
     left: 8px;
     display: none;
 }
-#storyline .arrowBtn.right {
+.arrowBtn.right {
     background-position: -220px -213px;
     right: 8px;
 }
+
+/* Timeline */
+#timeline .feeds {
+    font-size: var(--font-medium);
+}
+    /* Header of Feeds */
+    #timeline .feed__header {
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #timeline .header__profile {
+        display: flex;
+        position: relative;
+    }
+    #timeline .header__profile img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    #timeline .header__profile .username {
+        line-height: 30px;
+        margin-left: 8px;
+        font-weight: var(--weight-bold);
+        color: var(--color-black-light);
+    }
+    #timeline .feed__header .menu {
+        width: 22px;
+        height: 14px;
+        background-image: url(imgs/sprite-2.png);
+        background-position: -50px -389px;
+        background-repeat: no-repeat;
+        background-size: 450px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+
+    /* Imagebox of Feeds */
+    #timeline .feed__imgbox .imgs img {
+        width: 100%;
+        display: none;
+    }
+    #timeline .feed__imgbox .imgs img:first-child {
+        display: inline-block;
+    }
+    #timeline .feed__imgbox{
+        position: relative;
+    }
+    #timeline .feed__imgbox .arrowBtns {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /* Metadata of Feeds */
+        /* Actions on Metadata */
+            .feed__metadata {
+                padding: 6px 16px;
+            }
+                /* actions on Metadata */
+                .feed__metadata .actions {
+                    position: relative;
+                }
+                .feed__metadata .actions .actions__top {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 6px;
+                }
+                .feed__metadata .actions .icons img{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 16px;
+                }
+                .feed__metadata .actions .likes {
+                    font-weight: var(--weight-bold);
+                }
+                .feed__metadata .actions .taps {
+                    display: flex;
+                    width: fit-content;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+                .feed__metadata .actions .taps__circle {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 2px;
+                    background-color: var(--color-grey-dark);
+                    border-radius: 50%;
+                }
+                .feed__metadata .actions .taps__circle.active {
+                    background-color: var(--color-blue);
+                }
+
+                /* text on Metadata */
+                .metadata__text {
+                    margin: 6px 16px;
+                }
+                .metadata__text .username{
+                    float: left;
+                    margin-right: 6px;
+                    font-weight: var(--weight-bold);
+                }
+                .metadata__text .text__main .post .tags {
+                    color: var(--color-blue);
+                }
+                .metadata__text .text__main .post .tag h2{
+                    margin-left: -4px;
+                }
+                .metadata__text .text__main .post .tag:before {
+                    content: '#';
+                }
+                .metadata__text .text__main .moreBtn{
+                    color: var(--color-grey-dark);
+                    margin: 5px 0;
+                }
+                .metadata__text .text__comments .comment {
+                    margin-bottom: 6px;
+                }
+
+                /* Ago of metadata */
+                .feed__metadata .metadata__ago {
+                    font-size: var(--font-micro);
+                    color: var(--color-grey-dark);
+                } 
+                

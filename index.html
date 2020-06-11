@@ -27,7 +27,7 @@
         <a href="" class="logo">
             <img src="imgs/logo-2x.png" alt="instagram logo" />
         </a>
-        <ul class="navbar__icons">
+        <ul class="icons">
             <li class="icon">
                 <a href="">
                     <button class="home">
@@ -52,7 +52,7 @@
             <li class="icon">
                 <a href="">
                     <button class="activity">
-                        <img src="./imgs/activity.svg">
+                        <img src="./imgs/heart.svg">
                     </button>
                 </a>
             </li>
@@ -109,51 +109,64 @@
         <button class="arrowBtn right"></button>
     </section>
     <!-- Timeline -->
-    <section class="" id="timeline">
+    <section id="timeline">
         <ul class="feeds">
             <li class="feed" data-feed-num="01">
+                <!-- Header of Feeds -->
                 <div class="feed__header">
-                    <a href="" class="header__author">
-                        <img src="imgs/profile/1.jpg" class="profile"></img>
+                    <a href="" class="header__profile">
+                        <img src="imgs/profile/1.jpg"></img>
                         <div class="username">mic_mike</div>
                     </a>
-                    <button class="header__menu">
-                        <img src="imgs/sprite-2.png" alt="menu for this post">
-                    </button>
+                    <button class="menu"></button>
                 </div>
+                <!-- Imagebox of Feeds -->
                 <div class="feed__imgbox">
-                    <img src="img/feed/01/1.jpg">
-                    <img src="img/feed/01/2.jpg">
-                    <img src="img/feed/01/3.jpg">
-                    <img src="img/feed/01/4.jpg">
+                    <div class="imgs">
+                        <img src="imgs/feed/01/1.jpg">
+                        <img src="imgs/feed/01/2.jpg">
+                        <img src="imgs/feed/01/3.jpg">
+                        <img src="imgs/feed/01/4.jpg">
+                    </div>
+                    <div class="arrowBtns">
+                        <button class="arrowBtn left"></button>
+                        <button class="arrowBtn right"></button>
+                    </div>
                 </div>
+                <!-- Metadata for Feeds -->
                 <div class="feed__metadata">
-                    <div class="metadata__actions">
-                        <div class="actions__left">
-                            <div class="actions__icons">
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="like"></button>
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="view on bubble"></button>
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="send a message"></button>
+                    <div class="actions">
+                        <div class="actions__top">
+                            <div class="icons">
+                                <button class="icon">
+                                    <img src="./imgs/heart.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/bubble.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/dm.svg">
+                                </button>
                             </div>
+                            <button class="actions__save">
+                                <img src="./imgs/save.svg">
+                            </button>
                         </div>
-                        <button class="actions__like">29 likes</button>
-                        <button class="actions__save">
-                            <img src="imgs/sprite-2.png" alt="save this post">
-                        </button>
-                        <div class="actions__tap">
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
+                        <button class="likes">29 likes</button>
+                        <div class="taps">
+                            <div class="taps__circle active"></div>
+                            <div class="taps__circle"></div>
+                            <div class="taps__circle"></div>
+                            <div class="taps__circle"></div>
                         </div>
                     </div>
                     <div class="metadata__text">
                         <div class="text__main">
                             <div class="post">
                                 <span class="username">mic_mike</span>
-                                <p class="context">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
-                                    amet earum dignissimos quod quis atque tenetur, consequuntur et?
+                                <p class="context">.<br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                                    Dolor eos quam illum illo omnis saepe quidem voluptatibus magnam perferendis at.
                                 </p>
                                 <div class="tags">
                                     <a class="tag">
@@ -170,81 +183,9 @@
                             <button class="moreBtn">View all more <span>4</span> comments</button>
                         </div>
                         <div class="text__comments">
-                            <span class="username">mic_mike</span>
+                            <span class="username">co.clozet</span>
                             <p class="context">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
-                                amet earum dignissimos quod quis atque tenetur, consequuntur et?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="metadata__ago">
-                        <span>1 DAY</span> AGO
-                    </div>
-                </div>
-            </li>
-            <li class="feed" data-feed-num="01">
-                <div class="feed__header">
-                    <a href="" class="header__author">
-                        <img src="imgs/profile1/1.jpg" class="profile"></img>
-                        <div class="username">mic_mike</div>
-                    </a>
-                    <button class="header__menu">
-                        <img src="imgs/sprite-2.png" alt="menu for this post">
-                    </button>
-                </div>
-                <div class="feed__imgbox">
-                    <img src="img/feed/01/1.jpg">
-                    <img src="img/feed/01/2.jpg">
-                    <img src="img/feed/01/3.jpg">
-                    <img src="img/feed/01/4.jpg">
-                </div>
-                <div class="feed__metadata">
-                    <div class="metadata__actions">
-                        <div class="actions__left">
-                            <div class="actions__icons">
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="like"></button>
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="view on bubble"></button>
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="send a message"></button>
-                            </div>
-                        </div>
-                        <button class="actions__like">29 likes</button>
-                        <button class="actions__save">
-                            <img src="imgs/sprite-2.png" alt="save this post">
-                        </button>
-                        <div class="actions__tap">
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                        </div>
-                    </div>
-                    <div class="metadata__text">
-                        <div class="text__main">
-                            <div class="post">
-                                <span class="username">mic_mike</span>
-                                <p class="context">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
-                                    amet earum dignissimos quod quis atque tenetur, consequuntur et?
-                                </p>
-                                <div class="tags">
-                                    <a class="tag">
-                                        <h2>consectetur</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>atque</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>minima</h2>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="moreBtn">View all more <span>4</span> comments</button>
-                        </div>
-                        <div class="text__comments">
-                            <span class="username">mic_mike</span>
-                            <p class="context">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
-                                amet earum dignissimos quod quis atque tenetur, consequuntur et?
+                                Perferendis quam beatae ullam iusto aperiam deserunt asperiores, consequuntur.
                             </p>
                         </div>
                     </div>
@@ -254,69 +195,261 @@
                 </div>
             </li>
             <li class="feed" data-feed-num="02">
+                <!-- Header of Feeds -->
                 <div class="feed__header">
-                    <a href="" class="header__author">
-                        <img src="imgs/profile/1.jpg" class="profile"></img>
+                    <a href="" class="header__profile">
+                        <img src="imgs/profile/1.jpg"></img>
                         <div class="username">mic_mike</div>
                     </a>
-                    <button class="header__menu">
-                        <img src="imgs/sprite-2.png" alt="menu for this post">
-                    </button>
+                    <button class="menu"></button>
                 </div>
+                <!-- Imagebox of Feeds -->
                 <div class="feed__imgbox">
-                    <img src="img/feed/01/1.jpg">
-                    <img src="img/feed/01/2.jpg">
-                    <img src="img/feed/01/3.jpg">
-                    <img src="img/feed/01/4.jpg">
+                    <div class="imgs">
+                        <img src="imgs/feed/02/1.jpg">
+                        <img src="imgs/feed/02/2.jpg">
+                        <img src="imgs/feed/02/3.jpg">
+                    </div>
+                    <div class="arrowBtns">
+                        <button class="arrowBtn left"></button>
+                        <button class="arrowBtn right"></button>
+                    </div>
                 </div>
+                <!-- Metadata for Feeds -->
                 <div class="feed__metadata">
-                    <div class="metadata__actions">
-                        <div class="actions__left">
-                            <div class="actions__icons">
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="like"></button>
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="view on bubble"></button>
-                                <button class="icon"><img src="imgs/sprite-2.png" alt="send a message"></button>
+                    <div class="actions">
+                        <div class="actions__top">
+                            <div class="icons">
+                                <button class="icon">
+                                    <img src="./imgs/heart.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/bubble.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/dm.svg">
+                                </button>
                             </div>
+                            <button class="actions__save">
+                                <img src="./imgs/save.svg">
+                            </button>
                         </div>
-                        <button class="actions__like">29 likes</button>
-                        <button class="actions__save">
-                            <img src="imgs/sprite-2.png" alt="save this post">
-                        </button>
-                        <div class="actions__tap">
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
-                            <div class="tap__circle"></div>
+                        <button class="likes">29 likes</button>
+                        <div class="taps">
+                            <div class="taps__circle active"></div>
+                            <div class="taps__circle"></div>
+                            <div class="taps__circle"></div>
                         </div>
                     </div>
                     <div class="metadata__text">
                         <div class="text__main">
                             <div class="post">
-                                <span class="username">mic_mike</span>
-                                <p class="context">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
-                                    amet earum dignissimos quod quis atque tenetur, consequuntur et?
+                                <span class="username">yamyami</span>
+                                <p class="context">.<br>
+                                    Cupiditate minima nobis🍜<br>
+                                    .<br>
+                                    .<br>
+                                    Quam quo repudiandae obcaecati neque ipsam
                                 </p>
                                 <div class="tags">
                                     <a class="tag">
-                                        <h2>consectetur</h2>
+                                        <h2>repudiandae</h2>
                                     </a>
                                     <a class="tag">
-                                        <h2>atque</h2>
+                                        <h2>nobis</h2>
                                     </a>
                                     <a class="tag">
-                                        <h2>minima</h2>
+                                        <h2>neque</h2>
                                     </a>
                                 </div>
                             </div>
                             <button class="moreBtn">View all more <span>4</span> comments</button>
                         </div>
                         <div class="text__comments">
-                            <span class="username">mic_mike</span>
-                            <p class="context">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
-                                amet earum dignissimos quod quis atque tenetur, consequuntur et?
-                            </p>
+                            <div class="comment">
+                                <span class="username">street0graphy</span>
+                                <p class="context">
+                                    Cupiditate minima nobis
+                                </p>
+                            </div>
+                            <div class="comment">
+                                <span class="username">pro_visitor</span>
+                                <p class="context">
+                                    how beautiful picture!🥰 follw me please-🙃
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metadata__ago">
+                        <span>1 DAY</span> AGO
+                    </div>
+                </div>
+            </li>
+            <li class="feed" data-feed-num="03">
+                <!-- Header of Feeds -->
+                <div class="feed__header">
+                    <a href="" class="header__profile">
+                        <img src="imgs/profile/1.jpg"></img>
+                        <div class="username">street0graphy</div>
+                    </a>
+                    <button class="menu"></button>
+                </div>
+                <!-- Imagebox of Feeds -->
+                <div class="feed__imgbox">
+                    <div class="imgs">
+                        <img src="imgs/feed/03/1.jpg">
+                        <img src="imgs/feed/03/2.jpg">
+                    </div>
+                    <div class="arrowBtns">
+                        <button class="arrowBtn left"></button>
+                        <button class="arrowBtn right"></button>
+                    </div>
+                </div>
+                <!-- Metadata for Feeds -->
+                <div class="feed__metadata">
+                    <div class="actions">
+                        <div class="actions__top">
+                            <div class="icons">
+                                <button class="icon">
+                                    <img src="./imgs/heart.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/bubble.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/dm.svg">
+                                </button>
+                            </div>
+                            <button class="actions__save">
+                                <img src="./imgs/save.svg">
+                            </button>
+                        </div>
+                        <button class="likes">29 likes</button>
+                        <div class="taps">
+                            <div class="taps__circle active"></div>
+                            <div class="taps__circle"></div>
+                        </div>
+                    </div>
+                    <div class="metadata__text">
+                        <div class="text__main">
+                            <div class="post">
+                                <span class="username">street0graphy</span>
+                                <p class="context">
+                                    .<br>
+                                    Adipisicing elit.<br>
+                                    Quidem, odio!
+                                </p>
+                                <div class="tags">
+                                    <a class="tag">
+                                        <h2>adipisicing</h2>
+                                    </a>
+                                    <a class="tag">
+                                        <h2>elit</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="moreBtn">View all more <span>4</span> comments</button>
+                        </div>
+                        <div class="text__comments">
+                            <div class="comment">
+                                <span class="username">mic_mike</span>
+                                <p class="context">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima nobis
+                                    amet earum dignissimos quod quis atque tenetur, consequuntur et?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metadata__ago">
+                        <span>1 DAY</span> AGO
+                    </div>
+                </div>
+            </li>
+            <li class="feed" data-feed-num="04">
+                <!-- Header of Feeds -->
+                <div class="feed__header">
+                    <a href="" class="header__profile">
+                        <img src="imgs/profile/1.jpg"></img>
+                        <div class="username">street0graphy</div>
+                    </a>
+                    <button class="menu"></button>
+                </div>
+                <!-- Imagebox of Feeds -->
+                <div class="feed__imgbox">
+                    <div class="imgs">
+                        <img src="imgs/feed/04/1.jpg">
+                        <img src="imgs/feed/04/2.jpg">
+                    </div>
+                    <div class="arrowBtns">
+                        <button class="arrowBtn left"></button>
+                        <button class="arrowBtn right"></button>
+                    </div>
+                </div>
+                <!-- Metadata for Feeds -->
+                <div class="feed__metadata">
+                    <div class="actions">
+                        <div class="actions__top">
+                            <div class="icons">
+                                <button class="icon">
+                                    <img src="./imgs/heart.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/bubble.svg">
+                                </button>
+                                <button class="icon">
+                                    <img src="./imgs/dm.svg">
+                                </button>
+                            </div>
+                            <button class="actions__save">
+                                <img src="./imgs/save.svg">
+                            </button>
+                        </div>
+                        <button class="likes">29 likes</button>
+                        <div class="taps">
+                            <div class="taps__circle active"></div>
+                            <div class="taps__circle"></div>
+                        </div>
+                    </div>
+                    <div class="metadata__text">
+                        <div class="text__main">
+                            <div class="post">
+                                <span class="username">street0graphy</span>
+                                <p class="context">.<br>
+                                    Sunt earum porro odio?<br>
+                                    Quam quia officia facilis ea odio veniam eaque labore quod maiores dolorum.<br>
+                                    Unde, cupiditate sunt.<br>
+                                    Minus, debitis adipisci.<br>
+                                </p>
+                                <div class="tags">
+                                    <a class="tag">
+                                        <h2>officia</h2>
+                                    </a>
+                                    <a class="tag">
+                                        <h2>veniam</h2>
+                                    </a>
+                                    <a class="tag">
+                                        <h2>porro</h2>
+                                    </a>
+                                    <a class="tag">
+                                        <h2>debitis</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="moreBtn">View all more <span>4</span> comments</button>
+                        </div>
+                        <div class="text__comments">
+                            <div class="comment">
+                                <span class="username">hi_grandpa</span>
+                                <p class="context">
+                                    Corporis, debitis inventore!
+                                </p>
+                            </div>
+                            <div class="comment">
+                                <span class="username">hello_grandma</span>
+                                <p class="context">
+                                    Consectetur pariatur velit nisi qui enim, eligendi doloremque optio!
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="metadata__ago">
