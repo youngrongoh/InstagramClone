@@ -5,9 +5,9 @@
     --color-black: #231F20;
     --color-black-light: #262626;
     --color-grey-light: #FAFAFA;
-    --color-grey-dark: #DBDBDB;
+    --color-grey-dark: #999999;
     --color-red: #ED4956;
-    --color-blue: #0095F6;
+    --color-blue: #00376B;
     --color-pink: #C32E92;
     --color-orange: #F99B4A;
 
@@ -286,4 +286,28 @@ button {
                     font-size: var(--font-micro);
                     color: var(--color-grey-dark);
                 } 
-                
+
+/* Footer */
+#footer {
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    text-align: center;
+    font-weight: var(--weight-bold);
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.footer__list {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 345px;
+}
+.footer__list .list__item {
+    color: var(--color-blue);
+    margin: 0 8px;
+}
+.footer__copy {
+    color: var(--color-grey-dark);
+}
