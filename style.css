@@ -29,7 +29,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--color-grey-light);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Segoe UI",'Open Sans', sans-serif;
 }
 ul {
     margin: 0;
