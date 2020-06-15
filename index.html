@@ -23,489 +23,592 @@
 
 <body>
     <!-- Header -->
-    <header id="header" class="container">
-        <a href="" class="logo">
-            <img src="imgs/logo-2x.png" alt="instagram logo" />
-        </a>
-        <ul class="nav icons">
-            <li class="icon">
-                <a href="">
-                    <button class="home">
-                        <img src="./imgs/home.svg">
-                    </button>
-                </a>
-            </li>
-            <li class="icon">
-                <a href="">
-                    <button class="dm">
-                        <img src="./imgs/dm.svg">
-                    </button>
-                </a>
-            </li>
-            <li class="icon">
-                <a href="">
-                    <button class="explore">
-                        <img src="./imgs/explore.svg">
-                    </button>
-                </a>
-            </li>
-            <li class="icon">
-                <a href="">
-                    <button class="activity">
-                        <img src="./imgs/heart.svg">
-                    </button>
-                </a>
-            </li>
-            <li class="icon">
-                <a href="">
-                    <button class="myFeed">
-                        <img src="./imgs/profile-default.jpg">
-                    </button>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <!-- Story Line -->
-    <section id="storyline" class="maxWidth">
-        <ul class="storys">
-            <li class="story">
-                <div class="profile">
-                    <img src="/imgs/profile/1.jpg" />
-                </div>
-                <div class="username">mic_mike</div>
-            </li>
-            <li class="story">
-                <div class="profile">
-                    <img src="/imgs/profile/1.jpg" />
-                </div>
-                <div class="username">code.coco</div>
-            </li>
-            <li class="story">
-                <div class="profile">
-                    <img src="/imgs/profile/1.jpg" />
-                </div>
-                <div class="username">papastouch</div>
-            </li>
-            <li class="story">
-                <div class="profile">
-                    <img src="/imgs/profile/1.jpg" />
-                </div>
-                <div class="username">yamyami</div>
-            </li>
-            <li class="story">
-                <div class="profile">
-                    <img src="/imgs/profile/1.jpg" />
-                </div>
-                <div class="username">kr_1945</div>
-            </li>
-            <li class="story">
-                <div class="profile">
-                    <img src="/imgs/profile/1.jpg" />
-                </div>
-                <div class="username">kr_1945</div>
-            </li>
-        </ul>
-        <button class="arrowBtn left"></button>
-        <button class="arrowBtn right"></button>
-    </section>
-    <!-- Timeline -->
-    <section id="timeline" class="maxWidth">
-        <ul class="feeds">
-            <li class="feed" data-feed-num="01">
-                <!-- Header of Feeds -->
-                <div class="feed__header">
-                    <a href="" class="header__profile">
-                        <img src="imgs/profile/1.jpg"></img>
-                        <div class="username">mic_mike</div>
+    <header id="header">
+        <div class="container">
+            <a href="" class="logo">
+                <img src="imgs/logo-2x.png" alt="instagram logo" />
+            </a>
+            <form action="" method="post" class="search" autocomplete="off">
+                <span class="find"></span>
+                <input type="text" name="find" placeholder="Search">
+                <button class="cancleBtn"></button>
+            </form>
+            <ul class="nav icons">
+                <li class="icon">
+                    <a href="">
+                        <button class="home">
+                            <img src="./imgs/home.svg">
+                        </button>
                     </a>
-                    <button class="menu"></button>
-                </div>
-                <!-- Imagebox of Feeds -->
-                <div class="feed__imgbox">
-                    <div class="imgs">
-                        <img src="imgs/feed/01/1.jpg">
-                        <img src="imgs/feed/01/2.jpg">
-                        <img src="imgs/feed/01/3.jpg">
-                        <img src="imgs/feed/01/4.jpg">
-                    </div>
-                    <div class="arrowBtns">
-                        <button class="arrowBtn left"></button>
-                        <button class="arrowBtn right"></button>
-                    </div>
-                </div>
-                <!-- Metadata for Feeds -->
-                <div class="feed__metadata">
-                    <div class="actions">
-                        <div class="actions__top">
-                            <ul class="icons">
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/heart.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/bubble.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/dm.svg">
-                                    </button>
-                                </li>
-                            </ul>
-                            <button class="actions__save">
-                                <img src="./imgs/save.svg">
-                            </button>
-                        </div>
-                        <button class="likes">29 likes</button>
-                        <div class="taps">
-                            <div class="taps__circle active"></div>
-                            <div class="taps__circle"></div>
-                            <div class="taps__circle"></div>
-                            <div class="taps__circle"></div>
-                        </div>
-                    </div>
-                    <div class="metadata__text">
-                        <div class="text__main">
-                            <div class="post">
-                                <span class="username">mic_mike</span>
-                                <p class="context">.<br>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                                    Dolor eos quam illum illo omnis saepe quidem voluptatibus magnam perferendis
-                                    at.
-                                </p>
-                                <div class="tags">
-                                    <a class="tag">
-                                        <h2>consectetur</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>atque</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>minima</h2>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="moreBtn">View all more <span>4</span> comments</button>
-                        </div>
-                        <div class="text__comments">
-                            <span class="username">co.clozet</span>
-                            <p class="context">
-                                Perferendis quam beatae ullam iusto aperiam deserunt asperiores, consequuntur.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="metadata__ago">
-                        <span>1 DAY</span> AGO
-                    </div>
-                </div>
-            </li>
-            <li class="feed" data-feed-num="02">
-                <!-- Header of Feeds -->
-                <div class="feed__header">
-                    <a href="" class="header__profile">
-                        <img src="imgs/profile/1.jpg"></img>
-                        <div class="username">mic_mike</div>
+                </li>
+                <li class="icon">
+                    <a href="">
+                        <button class="dm">
+                            <img src="./imgs/dm.svg">
+                        </button>
                     </a>
-                    <button class="menu"></button>
-                </div>
-                <!-- Imagebox of Feeds -->
-                <div class="feed__imgbox">
-                    <div class="imgs">
-                        <img src="imgs/feed/02/1.jpg">
-                        <img src="imgs/feed/02/2.jpg">
-                        <img src="imgs/feed/02/3.jpg">
-                    </div>
-                    <div class="arrowBtns">
-                        <button class="arrowBtn left"></button>
-                        <button class="arrowBtn right"></button>
-                    </div>
-                </div>
-                <!-- Metadata for Feeds -->
-                <div class="feed__metadata">
-                    <div class="actions">
-                        <div class="actions__top">
-                            <ul class="icons">
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/heart.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/bubble.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/dm.svg">
-                                    </button>
-                                </li>
-                            </ul>
-                            <button class="actions__save">
-                                <img src="./imgs/save.svg">
-                            </button>
-                        </div>
-                        <button class="likes">29 likes</button>
-                        <div class="taps">
-                            <div class="taps__circle active"></div>
-                            <div class="taps__circle"></div>
-                            <div class="taps__circle"></div>
-                        </div>
-                    </div>
-                    <div class="metadata__text">
-                        <div class="text__main">
-                            <div class="post">
-                                <span class="username">yamyami</span>
-                                <p class="context">.<br>
-                                    Cupiditate minima nobis🍜<br>
-                                    .<br>
-                                    .<br>
-                                    Quam quo repudiandae obcaecati neque ipsam
-                                </p>
-                                <div class="tags">
-                                    <a class="tag">
-                                        <h2>repudiandae</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>nobis</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>neque</h2>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="moreBtn">View all more <span>4</span> comments</button>
-                        </div>
-                        <div class="text__comments">
-                            <div class="comment">
-                                <span class="username">street0graphy</span>
-                                <p class="context">
-                                    Cupiditate minima nobis
-                                </p>
-                            </div>
-                            <div class="comment">
-                                <span class="username">pro_visitor</span>
-                                <p class="context">
-                                    how beautiful picture!🥰 follw me please-🙃
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="metadata__ago">
-                        <span>1 DAY</span> AGO
-                    </div>
-                </div>
-            </li>
-            <li class="feed" data-feed-num="03">
-                <!-- Header of Feeds -->
-                <div class="feed__header">
-                    <a href="" class="header__profile">
-                        <img src="imgs/profile/1.jpg"></img>
-                        <div class="username">street0graphy</div>
+                </li>
+                <li class="icon">
+                    <a href="">
+                        <button class="explore">
+                            <img src="./imgs/explore.svg">
+                        </button>
                     </a>
-                    <button class="menu"></button>
-                </div>
-                <!-- Imagebox of Feeds -->
-                <div class="feed__imgbox">
-                    <div class="imgs">
-                        <img src="imgs/feed/03/1.jpg">
-                        <img src="imgs/feed/03/2.jpg">
-                    </div>
-                    <div class="arrowBtns">
-                        <button class="arrowBtn left"></button>
-                        <button class="arrowBtn right"></button>
-                    </div>
-                </div>
-                <!-- Metadata for Feeds -->
-                <div class="feed__metadata">
-                    <div class="actions">
-                        <div class="actions__top">
-                            <ul class="icons">
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/heart.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/bubble.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/dm.svg">
-                                    </button>
-                                </li>
-                            </ul>
-                            <button class="actions__save">
-                                <img src="./imgs/save.svg">
-                            </button>
-                        </div>
-                        <button class="likes">29 likes</button>
-                        <div class="taps">
-                            <div class="taps__circle active"></div>
-                            <div class="taps__circle"></div>
-                        </div>
-                    </div>
-                    <div class="metadata__text">
-                        <div class="text__main">
-                            <div class="post">
-                                <span class="username">street0graphy</span>
-                                <p class="context">
-                                    .<br>
-                                    Adipisicing elit.<br>
-                                    Quidem, odio!
-                                </p>
-                                <div class="tags">
-                                    <a class="tag">
-                                        <h2>adipisicing</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>elit</h2>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="moreBtn">View all more <span>4</span> comments</button>
-                        </div>
-                        <div class="text__comments">
-                            <div class="comment">
-                                <span class="username">mic_mike</span>
-                                <p class="context">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima
-                                    nobis
-                                    amet earum dignissimos quod quis atque tenetur, consequuntur et?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="metadata__ago">
-                        <span>1 DAY</span> AGO
-                    </div>
-                </div>
-            </li>
-            <li class="feed" data-feed-num="04">
-                <!-- Header of Feeds -->
-                <div class="feed__header">
-                    <a href="" class="header__profile">
-                        <img src="imgs/profile/1.jpg"></img>
-                        <div class="username">street0graphy</div>
+                </li>
+                <li class="icon">
+                    <a href="">
+                        <button class="activity">
+                            <img src="./imgs/heart.svg">
+                        </button>
                     </a>
-                    <button class="menu"></button>
-                </div>
-                <!-- Imagebox of Feeds -->
-                <div class="feed__imgbox">
-                    <div class="imgs">
-                        <img src="imgs/feed/04/1.jpg">
-                        <img src="imgs/feed/04/2.jpg">
-                    </div>
-                    <div class="arrowBtns">
-                        <button class="arrowBtn left"></button>
-                        <button class="arrowBtn right"></button>
-                    </div>
-                </div>
-                <!-- Metadata for Feeds -->
-                <div class="feed__metadata">
-                    <div class="actions">
-                        <div class="actions__top">
-                            <ul class="icons">
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/heart.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/bubble.svg">
-                                    </button>
-                                </li>
-                                <li class="icon">
-                                    <button>
-                                        <img src="./imgs/dm.svg">
-                                    </button>
-                                </li>
-                            </ul>
-                            <button class="actions__save">
-                                <img src="./imgs/save.svg">
-                            </button>
-                        </div>
-                        <button class="likes">29 likes</button>
-                        <div class="taps">
-                            <div class="taps__circle active"></div>
-                            <div class="taps__circle"></div>
-                        </div>
-                    </div>
-                    <div class="metadata__text">
-                        <div class="text__main">
-                            <div class="post">
-                                <span class="username">street0graphy</span>
-                                <p class="context">.<br>
-                                    Sunt earum porro odio?<br>
-                                    Quam quia officia facilis ea odio veniam eaque labore quod maiores
-                                    dolorum.<br>
-                                    Unde, cupiditate sunt.<br>
-                                    Minus, debitis adipisci.<br>
-                                </p>
-                                <div class="tags">
-                                    <a class="tag">
-                                        <h2>officia</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>veniam</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>porro</h2>
-                                    </a>
-                                    <a class="tag">
-                                        <h2>debitis</h2>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="moreBtn">View all more <span>4</span> comments</button>
-                        </div>
-                        <div class="text__comments">
-                            <div class="comment">
-                                <span class="username">hi_grandpa</span>
-                                <p class="context">
-                                    Corporis, debitis inventore!
-                                </p>
-                            </div>
-                            <div class="comment">
-                                <span class="username">hello_grandma</span>
-                                <p class="context">
-                                    Consectetur pariatur velit nisi qui enim, eligendi doloremque optio!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="metadata__ago">
-                        <span>1 DAY</span> AGO
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="footer__list">
-            <li class="list__item"><a href="" target="_blank">About</a></li>
-            <li class="list__item"><a href="" target="_blank">Help</a></li>
-            <li class="list__item"><a href="" target="_blank">Press</a></li>
-            <li class="list__item"><a href="" target="_blank">API</a></li>
-            <li class="list__item"><a href="" target="_blank">Jobs</a></li>
-            <li class="list__item"><a href="" target="_blank">Privacy</a></li>
-            <li class="list__item"><a href="" target="_blank">Terms</a></li>
-            <li class="list__item"><a href="" target="_blank">Location</a></li>
-            <li class="list__item"><a href="" target="_blank">Top Acounts</a></li>
-            <li class="list__item"><a href="" target="_blank">Hashtags</a></li>
-            <li class="list__item"><a href="" target="_blank">Language</a></li>
-        </ul>
-        <div class="footer__copy">
-            © 2020 Instagram Clone from youngrong.oh
+                </li>
+                <li class="icon">
+                    <a href="">
+                        <button class="myFeed">
+                            <img src="./imgs/profile-default.jpg">
+                        </button>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </footer>
+    </header>
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Main Left -->
+        <div class="main__left">
+            <!-- Story Line -->
+            <section id="storyline" class="maxWidth">
+                <ul class="storys">
+                    <li class="story">
+                        <div class="profile">
+                            <img src="/imgs/profile/1.jpg" />
+                        </div>
+                        <div class="username">mic_mike</div>
+                    </li>
+                    <li class="story">
+                        <div class="profile">
+                            <img src="/imgs/profile/1.jpg" />
+                        </div>
+                        <div class="username">code.coco</div>
+                    </li>
+                    <li class="story">
+                        <div class="profile">
+                            <img src="/imgs/profile/1.jpg" />
+                        </div>
+                        <div class="username">papastouch</div>
+                    </li>
+                    <li class="story">
+                        <div class="profile">
+                            <img src="/imgs/profile/1.jpg" />
+                        </div>
+                        <div class="username">yamyami</div>
+                    </li>
+                    <li class="story">
+                        <div class="profile">
+                            <img src="/imgs/profile/1.jpg" />
+                        </div>
+                        <div class="username">kr_1945</div>
+                    </li>
+                    <li class="story">
+                        <div class="profile">
+                            <img src="/imgs/profile/1.jpg" />
+                        </div>
+                        <div class="username">kr_1945</div>
+                    </li>
+                </ul>
+                <button class="arrowBtn left"></button>
+                <button class="arrowBtn right"></button>
+            </section>
+            <!-- Timeline -->
+            <section id="timeline" class="maxWidth">
+                <ul class="feeds">
+                    <li class="feed" data-feed-num="01">
+                        <!-- Header of Feeds -->
+                        <div class="feed__header">
+                            <a href="" class="header__profile">
+                                <img src="imgs/profile/1.jpg"></img>
+                                <div class="username">mic_mike</div>
+                            </a>
+                            <button class="menu"></button>
+                        </div>
+                        <!-- Imagebox of Feeds -->
+                        <div class="feed__imgbox">
+                            <div class="imgs">
+                                <img src="imgs/feed/01/1.jpg">
+                                <img src="imgs/feed/01/2.jpg">
+                                <img src="imgs/feed/01/3.jpg">
+                                <img src="imgs/feed/01/4.jpg">
+                            </div>
+                            <div class="arrowBtns">
+                                <button class="arrowBtn left"></button>
+                                <button class="arrowBtn right"></button>
+                            </div>
+                        </div>
+                        <!-- Metadata for Feeds -->
+                        <div class="feed__metadata">
+                            <div class="actions">
+                                <div class="actions__top">
+                                    <ul class="icons">
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/heart.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/bubble.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/dm.svg">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button class="actions__save">
+                                        <img src="./imgs/save.svg">
+                                    </button>
+                                </div>
+                                <button class="likes">29 likes</button>
+                                <div class="taps">
+                                    <div class="taps__circle active"></div>
+                                    <div class="taps__circle"></div>
+                                    <div class="taps__circle"></div>
+                                    <div class="taps__circle"></div>
+                                </div>
+                            </div>
+                            <div class="metadata__text">
+                                <div class="text__main">
+                                    <div class="post">
+                                        <span class="username">mic_mike</span>
+                                        <p class="context">.<br>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                                            Dolor eos quam illum illo omnis saepe quidem voluptatibus magnam perferendis
+                                            at.
+                                        </p>
+                                        <div class="tags">
+                                            <a class="tag">
+                                                <h2>consectetur</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>atque</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>minima</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="moreBtn">View all more <span>4</span> comments</button>
+                                </div>
+                                <div class="text__comments">
+                                    <span class="username">co.clozet</span>
+                                    <p class="context">
+                                        Perferendis quam beatae ullam iusto aperiam deserunt asperiores, consequuntur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="metadata__ago">
+                                <span>1 DAY</span> AGO
+                            </div>
+                        </div>
+                    </li>
+                    <li class="feed" data-feed-num="02">
+                        <!-- Header of Feeds -->
+                        <div class="feed__header">
+                            <a href="" class="header__profile">
+                                <img src="imgs/profile/1.jpg"></img>
+                                <div class="username">mic_mike</div>
+                            </a>
+                            <button class="menu"></button>
+                        </div>
+                        <!-- Imagebox of Feeds -->
+                        <div class="feed__imgbox">
+                            <div class="imgs">
+                                <img src="imgs/feed/02/1.jpg">
+                                <img src="imgs/feed/02/2.jpg">
+                                <img src="imgs/feed/02/3.jpg">
+                            </div>
+                            <div class="arrowBtns">
+                                <button class="arrowBtn left"></button>
+                                <button class="arrowBtn right"></button>
+                            </div>
+                        </div>
+                        <!-- Metadata for Feeds -->
+                        <div class="feed__metadata">
+                            <div class="actions">
+                                <div class="actions__top">
+                                    <ul class="icons">
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/heart.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/bubble.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/dm.svg">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button class="actions__save">
+                                        <img src="./imgs/save.svg">
+                                    </button>
+                                </div>
+                                <button class="likes">29 likes</button>
+                                <div class="taps">
+                                    <div class="taps__circle active"></div>
+                                    <div class="taps__circle"></div>
+                                    <div class="taps__circle"></div>
+                                </div>
+                            </div>
+                            <div class="metadata__text">
+                                <div class="text__main">
+                                    <div class="post">
+                                        <span class="username">yamyami</span>
+                                        <p class="context">.<br>
+                                            Cupiditate minima nobis🍜<br>
+                                            .<br>
+                                            .<br>
+                                            Quam quo repudiandae obcaecati neque ipsam
+                                        </p>
+                                        <div class="tags">
+                                            <a class="tag">
+                                                <h2>repudiandae</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>nobis</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>neque</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="moreBtn">View all more <span>4</span> comments</button>
+                                </div>
+                                <div class="text__comments">
+                                    <div class="comment">
+                                        <span class="username">street0graphy</span>
+                                        <p class="context">
+                                            Cupiditate minima nobis
+                                        </p>
+                                    </div>
+                                    <div class="comment">
+                                        <span class="username">pro_visitor</span>
+                                        <p class="context">
+                                            how beautiful picture!🥰 follw me please-🙃
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="metadata__ago">
+                                <span>1 DAY</span> AGO
+                            </div>
+                        </div>
+                    </li>
+                    <li class="feed" data-feed-num="03">
+                        <!-- Header of Feeds -->
+                        <div class="feed__header">
+                            <a href="" class="header__profile">
+                                <img src="imgs/profile/1.jpg"></img>
+                                <div class="username">street0graphy</div>
+                            </a>
+                            <button class="menu"></button>
+                        </div>
+                        <!-- Imagebox of Feeds -->
+                        <div class="feed__imgbox">
+                            <div class="imgs">
+                                <img src="imgs/feed/03/1.jpg">
+                                <img src="imgs/feed/03/2.jpg">
+                            </div>
+                            <div class="arrowBtns">
+                                <button class="arrowBtn left"></button>
+                                <button class="arrowBtn right"></button>
+                            </div>
+                        </div>
+                        <!-- Metadata for Feeds -->
+                        <div class="feed__metadata">
+                            <div class="actions">
+                                <div class="actions__top">
+                                    <ul class="icons">
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/heart.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/bubble.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/dm.svg">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button class="actions__save">
+                                        <img src="./imgs/save.svg">
+                                    </button>
+                                </div>
+                                <button class="likes">29 likes</button>
+                                <div class="taps">
+                                    <div class="taps__circle active"></div>
+                                    <div class="taps__circle"></div>
+                                </div>
+                            </div>
+                            <div class="metadata__text">
+                                <div class="text__main">
+                                    <div class="post">
+                                        <span class="username">street0graphy</span>
+                                        <p class="context">
+                                            .<br>
+                                            Adipisicing elit.<br>
+                                            Quidem, odio!
+                                        </p>
+                                        <div class="tags">
+                                            <a class="tag">
+                                                <h2>adipisicing</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>elit</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="moreBtn">View all more <span>4</span> comments</button>
+                                </div>
+                                <div class="text__comments">
+                                    <div class="comment">
+                                        <span class="username">mic_mike</span>
+                                        <p class="context">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima
+                                            nobis
+                                            amet earum dignissimos quod quis atque tenetur, consequuntur et?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="metadata__ago">
+                                <span>1 DAY</span> AGO
+                            </div>
+                        </div>
+                    </li>
+                    <li class="feed" data-feed-num="04">
+                        <!-- Header of Feeds -->
+                        <div class="feed__header">
+                            <a href="" class="header__profile">
+                                <img src="imgs/profile/1.jpg"></img>
+                                <div class="username">street0graphy</div>
+                            </a>
+                            <button class="menu"></button>
+                        </div>
+                        <!-- Imagebox of Feeds -->
+                        <div class="feed__imgbox">
+                            <div class="imgs">
+                                <img src="imgs/feed/04/1.jpg">
+                                <img src="imgs/feed/04/2.jpg">
+                            </div>
+                            <div class="arrowBtns">
+                                <button class="arrowBtn left"></button>
+                                <button class="arrowBtn right"></button>
+                            </div>
+                        </div>
+                        <!-- Metadata for Feeds -->
+                        <div class="feed__metadata">
+                            <div class="actions">
+                                <div class="actions__top">
+                                    <ul class="icons">
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/heart.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/bubble.svg">
+                                            </button>
+                                        </li>
+                                        <li class="icon">
+                                            <button>
+                                                <img src="./imgs/dm.svg">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button class="actions__save">
+                                        <img src="./imgs/save.svg">
+                                    </button>
+                                </div>
+                                <button class="likes">29 likes</button>
+                                <div class="taps">
+                                    <div class="taps__circle active"></div>
+                                    <div class="taps__circle"></div>
+                                </div>
+                            </div>
+                            <div class="metadata__text">
+                                <div class="text__main">
+                                    <div class="post">
+                                        <span class="username">street0graphy</span>
+                                        <p class="context">.<br>
+                                            Sunt earum porro odio?<br>
+                                            Quam quia officia facilis ea odio veniam eaque labore quod maiores
+                                            dolorum.<br>
+                                            Unde, cupiditate sunt.<br>
+                                            Minus, debitis adipisci.<br>
+                                        </p>
+                                        <div class="tags">
+                                            <a class="tag">
+                                                <h2>officia</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>veniam</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>porro</h2>
+                                            </a>
+                                            <a class="tag">
+                                                <h2>debitis</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="moreBtn">View all more <span>4</span> comments</button>
+                                </div>
+                                <div class="text__comments">
+                                    <div class="comment">
+                                        <span class="username">hi_grandpa</span>
+                                        <p class="context">
+                                            Corporis, debitis inventore!
+                                        </p>
+                                    </div>
+                                    <div class="comment">
+                                        <span class="username">hello_grandma</span>
+                                        <p class="context">
+                                            Consectetur pariatur velit nisi qui enim, eligendi doloremque optio!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="metadata__ago">
+                                <span>1 DAY</span> AGO
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- Main Right -->
+        <div class="main__right">
+            <!-- Suggestions -->
+            <div class="suggestions">
+                <div class="profile">
+                    <a href="">
+                        <button class="myFeed">
+                            <img src="./imgs/profile-default.jpg">
+                        </button>
+                    </a>
+                    <a href="" class="username">youngrong.oh</a>
+                </div>
+                <div class="suggestions__header">
+                    <span>Suggetions For You</span>
+                    <a href="">See All</a>
+                </div>
+                <ul class="suggestions__list">
+                    <li class="suggestion">
+                        <div class="suggestion__left">
+                            <a href="">
+                                <button class="profile">
+                                    <img src="./imgs/profile-default.jpg">
+                                </button>
+                            </a>
+                            <div class="namebox">
+                                <div class="username">some_one</div>
+                                <div class="status">Followed by mic_mike + 2 more</div>
+                            </div>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </li>
+                    <li class="suggestion">
+                        <div class="suggestion__left">
+                            <a href="">
+                                <button class="profile">
+                                    <img src="./imgs/profile-default.jpg">
+                                </button>
+                            </a>
+                            <div class="namebox">
+                                <div class="username">any_one</div>
+                                <div class="status">Follows you</div>
+                            </div>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </li>
+                    <li class="suggestion">
+                        <div class="suggestion__left">
+                            <a href="">
+                                <button class="profile">
+                                    <img src="./imgs/profile-default.jpg">
+                                </button>
+                            </a>
+                            <div class="namebox">
+                                <div class="username">some.b0dy</div>
+                                <div class="status">Follows you</div>
+                            </div>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </li>
+                    <li class="suggestion">
+                        <div class="suggestion__left">
+                            <a href="">
+                                <button class="profile">
+                                    <img src="./imgs/profile-default.jpg">
+                                </button>
+                            </a>
+                            <div class="namebox">
+                                <div class="username">hello_grandma</div>
+                                <div class="status">Followed by hi_grandpa + 5 more</div>
+                            </div>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </li>
+                    <li class="suggestion">
+                        <div class="suggestion__left">
+                            <a href="">
+                                <button class="profile">
+                                    <img src="./imgs/profile-default.jpg">
+                                </button>
+                            </a>
+                            <div class="namebox">
+                                <div class="username">any.b0dy</div>
+                                <div class="status">Followed by street0graphy</div>
+                            </div>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="footer__list">
+                    <li class="list__item"><a href="" target="_blank">About</a></li>
+                    <li class="list__item"><a href="" target="_blank">Help</a></li>
+                    <li class="list__item"><a href="" target="_blank">Press</a></li>
+                    <li class="list__item"><a href="" target="_blank">API</a></li>
+                    <li class="list__item"><a href="" target="_blank">Jobs</a></li>
+                    <li class="list__item"><a href="" target="_blank">Privacy</a></li>
+                    <li class="list__item"><a href="" target="_blank">Terms</a></li>
+                    <li class="list__item"><a href="" target="_blank">Location</a></li>
+                    <li class="list__item"><a href="" target="_blank">Top Acounts</a></li>
+                    <li class="list__item"><a href="" target="_blank">Hashtags</a></li>
+                    <li class="list__item"><a href="" target="_blank">Language</a></li>
+                </ul>
+                <div class="footer__copy">
+                    © Instagram Clone from <a href="">youngrong.oh</a>
+                </div>
+            </footer>
+        </div>
+    </main>
+
 
 </body>
 
